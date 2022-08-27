@@ -1,2 +1,0 @@
-# GlobalTIC
-Sprint 1

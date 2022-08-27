@@ -1,0 +1,130 @@
+@font-face{
+    src: url('../fonts/LEMONMILK-Regular.otf');
+    font-family: fuentes;
+}
+
+body{
+    background-image: url(../imagenes/Deltechnology_logo.png);
+    background-size: cover;
+
+}
+
+.contheader{
+/* background: rgb(253,253,255);
+ background: linear-gradient(180deg, rgba(253,253,255,1) 0%, rgba(80,107,110,0.835171568627451) 50%, rgba(255,255,255,1) 100%);*/
+    display: flex;
+    align-items: center;
+    justify: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titulo{
+ align-items: center;
+ justify: center;
+ text-align:center;
+ color: #727272;
+     font-family: fuentes;
+     font-size: 40px;
+     letter-spacing: 2px;
+}
+
+.linea {
+  border-top: thick double #CBC8C8;
+  height: 10px;
+  padding: 10px;
+  margin: 2px;
+  }
+
+.back-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+}
+/*
+.menu{
+    background-color: rgb(71, 26, 122);
+    width: 60%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.lista{
+    display: inline;
+    background-color: #80A0F5;
+    width: 100px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 0px 0px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.titulop{
+    color:rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #E2E1D6;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    background-image: url('../imagenes/Logo64x64.png');
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    background-size: cover;
+    display: flex;
+    
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+ */
+.secuno{
+    display: flex;
+    
+
+}
+.art1{
+       font-color: #2009a8
+                  width: 20%;
+                  height: 150px;
+                  margin-right: auto;
+                  margin-left: auto;
+                  border-radius: 3%;
+                  padding: 20px;
+                  box-shadow: 1px 10px 10px rgb(2, 2, 2);
+}
+
+.art2{
+    font-color: #2009a8
+               width: 20%;
+               height: 150px;
+               margin-right: auto;
+               margin-left: auto;
+               border-radius: 3%;
+               padding: 20px;
+               box-shadow: 1px 10px 10px rgb(2, 2, 2);
+}
+.art3{
+    font-color: #2009a8
+           height: 150px;
+           width: 20%;
+           margin-right: auto;
+           margin-left: auto;
+           border-radius: 3%;
+           padding: 20px;
+           box-shadow: 1px 10px 10px rgb(2, 2, 2);
+}

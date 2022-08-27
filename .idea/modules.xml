@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Sprint2_GlobalTIC-Soluciones.iml" filepath="$PROJECT_DIR$/Sprint2_GlobalTIC-Soluciones.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ProyectoCooperativa.iml" filepath="$PROJECT_DIR$/.idea/ProyectoCooperativa.iml" />
     </modules>
   </component>
 </project>
