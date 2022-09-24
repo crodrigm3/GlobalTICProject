@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/styless.css}">
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>GlobalTIC SAS</title>
+</head>
+<body>
+    <main>
+        <header class="contheader" id="contenca">
+        </header>
+        <div class="px-4 py-5 my5 text-center">
+            <h1 class="titulo">GLOBALTIC SOLUCIONES SAS</h1>
+            <h2 class="titulo">SISTEMA DE GESTION</h2>
+
+
+            <div sec:authorize="!isAuthenticated()">
+                <a th:href="@{/oauth2/authorization/auth0}" class="btn btn-primary btn-lg px-4 gap-3">Iniciar sesion</a>
+            </div>
+
+            <div sec:authorize="isAuthenticated()">
+
+                <h3 th:text="'Usted se ha autenticado como: ' + ${user.getEmail()}"></h3>
+
+                <a th:href="@{cliente}" class="btn btn-primary btn-lg px-4 gap-3">Llévame a la aplicación</a>
+            </div>
+            <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Saber más</button> -->
+        </div>
+
+
+        </div>
+
+        <section class="secuno">
+            <article class="art1" id="artt1">
+                <h2>Sistema de gestión de ingresos y gastos</h2>
+            </article>
+            <article class="art2" id="arrt2">
+                <h2>Sistemas de gestión de usuarios</h2>
+            </article>
+            <article class="art3" id="arrt3">
+                <h2>Sistema de gestión de empresas</h2>
+            </article>
+        </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+
+</html>

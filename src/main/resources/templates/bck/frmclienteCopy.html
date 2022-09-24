@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" th:href="@{/css/stylessTable.css}">
+  <link rel="stylesheet" th:href="@{/css/reset.css}">
+  <title>GlobalTIC SAS</title>
+</head>
+  <body>
+        <fieldset class="fi">
+            <legend>Registrar Cliente</legend>
+            <form th:action="@{/cliente/guardar}" th:object="${clienteInsertar}" method="POST" class="frm">
+
+              <label for="doc">Documento
+                <input type="text" id="doc" required th:field="*{documento}">
+                </label>
+
+              <label for="name">Nombre
+                <input type="text" id="name" required th:field="*{nombre}">
+              </label>
+
+              <label for="lastname">Apellidos
+                <input type="text" id="lastname" required th:field="*{apellidos}">
+              </label>
+
+                <label for="mail">Correo
+                <input type="email" id="mail" placeholder="Correo electrónico" required th:field="*{correo}">
+                </label>
+
+              <label for="mobile">Celular
+                <input type="text" id="mobile" required th:field="*{celular}">
+              </label>
+
+              <input class="btn btn-warning btn-lg px-4 gap-3" type="submit" value="Registrar">
+
+            </form>
+
+        </fieldset>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    </body>
+<a th:href="@{/menu}" class="btn btn-info btn-lg px-4 gap-3">Regresar</a>
+</html>
