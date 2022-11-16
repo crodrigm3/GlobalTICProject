@@ -1,18 +1,14 @@
 const express = require("express")
 const cors = require("cors")
 const body_parse = require("body-parser")
-const path = require("path")
+//const path = require("path")
+const pathName="/reservas"
 const reservasService = require("./reservaService.js")
-
 const app = express()
 const port = 8084
 
-
 app.use(cors())
 app.use(body_parse.json())
-
-const pathName="/reservas"
-
 
 app.get(pathName,
     (req, res)=>{
@@ -36,7 +32,6 @@ app.get(pathName+"/reservascanceladas",
         res.send(await reservasService.reservasACancelarExport())
     }
 )
-
 
 app.post(pathName,
     async (req, res)=>{
@@ -78,7 +73,6 @@ app.patch(pathName+"/reservas/estado",
         res.send(reservasService.setEstadoReservaExport(req.body))
     }
 )
-
 
 app.listen(port, 
     ()=>{

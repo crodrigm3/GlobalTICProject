@@ -1,18 +1,14 @@
 const express = require("express")
 const cors = require("cors")
 const body_parse = require("body-parser")
-const path = require("path")
+//const path = require("path")
+const pathName="/clientes"
 const clientesService = require("./clienteService.js")
-
 const app = express()
 const port = 8082
 
-
 app.use(cors())
 app.use(body_parse.json())
-
-const pathName="/clientes"
-
 
 app.get(pathName,
     (req, res)=>{
@@ -29,7 +25,6 @@ app.get(pathName+"/id",
         res.send(await clientesService.clientesgetIdExport(id))
 }
 )
-
 
 app.post(pathName,
     (req, res)=>{
@@ -65,7 +60,6 @@ app.patch(pathName,
         res.send("Finaliza")
     }
 )
-
 
 app.listen(port, 
     ()=>{

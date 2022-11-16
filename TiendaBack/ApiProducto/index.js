@@ -1,18 +1,14 @@
 const express = require("express")
 const cors = require("cors")
 const body_parse = require("body-parser")
-const path = require("path")
+//const path = require("path")
+const pathName="/productos"
 const productosService = require("./productoService.js")
-
 const app = express()
 const port = 8081
 
-
 app.use(cors())
 app.use(body_parse.json())
-
-const pathName="/productos"
-
 
 app.get(pathName,
     async (req, res)=>{
@@ -21,7 +17,6 @@ app.get(pathName,
         res.send(await productosService.productosgetExport(id))
     }
 )
-
 
 app.get(pathName+"/id",
 
@@ -32,7 +27,6 @@ app.get(pathName+"/id",
             res.send(await productosService.productosgetidExport(id))
         }
     )
-
 
 app.post(pathName,
     async (req, res)=>{

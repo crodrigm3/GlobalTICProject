@@ -3,7 +3,7 @@ const getMongo = require("./mongodb.js")
 
 const productoGet = async () =>{
     const { collection, client } = await getConexiones()
-    const productos =await collection.find({}).toArray()
+    const productos = await collection.find({}).toArray()
     await getMongo.closeClientExport(client)
     return productos
 }

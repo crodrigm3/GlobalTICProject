@@ -1,18 +1,14 @@
 const express = require("express")
 const cors = require("cors")
 const body_parse = require("body-parser")
-const path = require("path")
+//const path = require("path")
+const pathName="/pagos"
 const pagosService = require("./pagoService.js")
-
 const app = express()
 const port = 8083
 
-
 app.use(cors())
 app.use(body_parse.json())
-
-const pathName="/pagos"
-
 
 app.get(pathName,
     async (req, res)=>{
@@ -21,7 +17,6 @@ app.get(pathName,
         res.send(await pagosService.pagosgetExport(req.query.idclient))
     }
 )
-
 
 app.post(pathName,
     (req, res)=>{
@@ -57,7 +52,6 @@ app.patch(pathName,
         res.send("Finaliza")
     }
 )
-
 
 app.listen(port, 
     ()=>{
