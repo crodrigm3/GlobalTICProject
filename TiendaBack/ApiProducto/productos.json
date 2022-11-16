@@ -1,0 +1,38 @@
+[
+    {
+        "_id":"PD01",
+        "nombreProducto":"Motorola M20)",
+        "descripcionProducto":"Celular Motorola - Moto M20 - 128 GB - 4G",
+        "categoriaProducto":"Celular",
+        "fechaIngresoProducto":"2022-11-05 01:00:00",
+        "valorProducto":800100,
+        "cantidadProducto":20
+    },
+    {
+        "_id":"PD02",
+        "nombreProducto":"Galaxy G20)",
+        "descripcionProducto":"Celular Samsung - Galaxy G20 - 128 GB - 4G",
+        "categoriaProducto":"Celular",
+        "fechaIngresoProducto":"2022-11-05 01:00:00",
+        "valorProducto":900200,
+        "cantidadProducto":20
+    },
+    {
+        "_id":"PD03",
+        "nombreProducto":"Xiaomi X20)",
+        "descripcionProducto":"Celular Xiaomi - Mi X20 - 128 GB - 4G",
+        "categoriaProducto":"Celular",
+        "fechaIngresoProducto":"2022-11-05 01:00:00",
+        "valorProducto":600300,
+        "cantidadProducto":20
+    },
+    {
+        "_id":"PD04",
+        "nombreProducto":"Huawei H20",
+        "descripcionProducto":"Celular Huawei - Huawei H20 - 128 GB - 4G",
+        "categoriaProducto":"Celular",
+        "fechaIngresoProducto":"2022-11-05 01:00:00",
+        "valorProducto":700400,
+        "cantidadProducto":20
+    }
+]
